@@ -1,0 +1,17 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  creationTimestamp: null
+  name: devfile-sample-python-basic-tgpx
+spec:
+  selector: {}
+  strategy: {}
+  template:
+    metadata:
+      creationTimestamp: null
+    spec:
+      containers:
+      - image: quay.io/redhat-appstudio-qe/release-e2e-pyxis-tenant/appstudio/devfile-sample-python-basic-tgpx@sha256:11d35a5e5fc2e462d850552f3c3c3c70a8a2dc91c3d3e44a4f54abfbbc6d099b
+        name: my-python
+        resources: {}
+status: {}
